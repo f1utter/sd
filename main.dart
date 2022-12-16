@@ -5,14 +5,14 @@ import 'package:external_path/external_path.dart';
 import 'package:permission_handler/permission_handler.dart';
 import 'package:google_fonts/google_fonts.dart';
 void main() => runApp(const MyApp());
-
+//needs <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE"/>
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       theme:
-          ThemeData(primarySwatch: Colors.indigo, brightness: Brightness.dark),
+      ThemeData(primarySwatch: Colors.indigo, brightness: Brightness.dark),
       home: const SDScaffold(),
     );
   }
